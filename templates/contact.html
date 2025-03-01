@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meet the Creators - DEEPFAKE DETECTION SYSTEM</title>
+    <link rel="icon" href="{{ url_for('static', filename='assets/logo.png') }}" type="image/x-icon"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/style.css') }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .div-head {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .jumbotron {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-style {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            background-color: #546887; /* Solid background */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-style:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-body img:hover {
+            transform: scale(1.1);
+            border-color: #ffd700; /* Gold border on hover */
+        }
+
+        .card-text {
+            font-family: Helvetica, sans-serif;
+            font-weight: 700;
+            margin-top: 10px;
+            color: white;
+        }
+
+        .card-body p {
+            text-align: justify;
+            color: white;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .card-style {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div-head">
+        <h1>Meet the Creators</h1>
+        <div class="container">
+            <div class="jumbotron">
+                <p class="lead">Deepfake technology has both threats and opportunities in today's world. While it enables creative applications in entertainment and media, it also poses risks such as misinformation, identity theft, and political manipulation. With the rise of AI-generated content, detecting deepfakes is critical for maintaining trust, security, and authenticity in digital interactions. A strong detection system helps protect individuals, businesses, and governments from fraudulent content and cyber threats.</p>
+                <hr class="my-4">
+                <p class="lead">If you have any questions, suggestions, or collaboration ideas, feel free to reach out to us!</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Purva's Card -->
+                <div class="col-md-6">
+                    <div class="card card-style">
+                        <div class="card-body">
+                            <img src="{{ url_for('static', filename='images/creator1.jpg') }}" alt="Purva Golegaonkar">
+                            <p class="card-text">Purva Golegaonkar</p>
+                            <p>A technology enthusiast with expertise in AI, deep learning, and human-computer interaction. Purva is currently involved in multiple AI-driven projects that solve real-world challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Devang's Card -->
+                <div class="col-md-6">
+                    <div class="card card-style">
+                        <div class="card-body">
+                            <img src="{{ url_for('static', filename='images/creator2.jpg') }}" alt="Devang Bissa">
+                            <p class="card-text">Devang Bissa</p>
+                            <p>Devang is a deep learning enthusiast with strong knowledge in machine learning and computer vision. He is passionate about leveraging AI to enhance real-world applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function sendEmail(email) {
+            window.location.href = "mailto:" + email;
+        }
+    </script>
+
+</body>
+</html>
